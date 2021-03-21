@@ -21,9 +21,8 @@ body {
 
     height: 50px;
     width: 50px;
-    position: absolute;
-    top: 30px;
-    left: 30px;
+    justify-self: end;
+    padding: 5vw;
 
 }
 
@@ -51,11 +50,51 @@ body {
 
 }
 
-#middle-web-developer {
+.middle-styled-letters {
+
+    position: relative;
+    right: 15vw;
+    opacity: 0;
+    animation-name: middle-styled-letters;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms;
+
+}
+
+@keyframes middle-styled-letters {
+
+    100% {
+
+        opacity: 1;
+        right: 0;
+
+    }
+
+}
+
+#top-web-developer {
 
     width: 75vw;
     margin: auto;
     grid-row: 2;
+    opacity: 0;
+    animation-name: middle-web-developer;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+
+}
+
+@keyframes middle-web-developer {
+
+    100% {
+
+        opacity: 1
+
+    }
 
 }
 
@@ -76,5 +115,30 @@ body {
     margin-top: 5vh;
     font-size: 4vw;
     box-shadow: 1vw 1vw 0 0 #ebebeb;
+    transition: 300ms;
+    opacity: 0;
+    animation-name: bottom-button;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+
+}
+
+@keyframes bottom-button {
+
+    100% {
+
+        opacity: 1
+
+    }
+
+}
+
+#bottom-button:hover {
+
+    margin-top: 4vh;
+    margin-right: 1vw;
+    box-shadow: 2vw 2vw 0 0 #ebebeb;
 
 }
