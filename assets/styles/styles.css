@@ -17,7 +17,13 @@ body {
 
 }
 
-#logo {
+input {
+
+    display: block;
+
+}
+
+#top-logo {
 
     height: 50px;
     width: 50px;
@@ -37,7 +43,7 @@ body {
 
     display: grid;
     justify-content: center;
-    align-content: center;
+    align-content: start;
     font-size: 7vh;
     text-align: center;
 
@@ -141,4 +147,59 @@ body {
     margin-right: 1vw;
     box-shadow: 2vw 2vw 0 0 #ebebeb;
 
+}
+
+#top-page-name {
+
+    font-size: 7vh;
+    justify-self: center;
+    text-align: center;
+
+}
+
+#middle-form {
+
+    font-size: 3vh;
+    display: grid;
+
+}
+
+.middle-name-label {
+
+    justify-self: start;
+    margin-bottom: 1vh;
+
+}
+
+#middle-name-input {
+
+    outline: none;
+    border: 1vw solid #4959A8;
+    width: 65vw;
+    height: 5vh;
+    background-color: #e6eaff;
+    margin-bottom: 2vh;
+    
+}
+
+#middle-name-email {
+
+    outline: none;
+    border: 1vw solid #4959A8;
+    width: 65vw;
+    height: 5vh;
+    background-color: #e6eaff;
+    margin-bottom: 2vh;
+    
+}
+
+#middle-name-message {
+
+    outline: none;
+    border: 1vw solid #4959A8;
+    width: 65vw;
+    height: 5vh;
+    background-color: #e6eaff;
+    padding-bottom: 10vh;
+    
 }
