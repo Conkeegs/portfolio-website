@@ -7,7 +7,7 @@
 
 }
 
-body {
+#index-body {
 
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -116,7 +116,7 @@ input {
 
     width: 30vw;
     height: 6vh;
-    background-color: #4959A8;
+    background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
     border: none;
     margin-top: 5vh;
     font-size: 4vw;
@@ -149,10 +149,19 @@ input {
 
 }
 
+#contact-body {
+
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    height: 100vh;
+    background-color: #1f2226;
+    background: radial-gradient(#2f3338, #1f2226 80%);
+
+}
+
 #top-page-name {
 
     font-size: 7vh;
-    justify-self: center;
     text-align: center;
 
 }
@@ -164,39 +173,52 @@ input {
 
 }
 
-.middle-name-label {
+#middle-name-label {
 
     justify-self: start;
-    margin-bottom: 1vh;
+    padding-bottom: 1vh;
+
+}
+
+.middle-contact-label {
+
+    justify-self: start;
+    padding-top: 4vh;
+    padding-bottom: 1vh;
+
+}
+
+.middle-container {
+
+    background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
+    padding: 1vw;
 
 }
 
 #middle-name-input {
 
     outline: none;
-    border: 1vw solid #4959A8;
+    border: 0;
     width: 65vw;
     height: 5vh;
     background-color: #e6eaff;
-    margin-bottom: 2vh;
     
 }
 
 #middle-name-email {
 
     outline: none;
-    border: 1vw solid #4959A8;
+    border: 0;
     width: 65vw;
     height: 5vh;
     background-color: #e6eaff;
-    margin-bottom: 2vh;
     
 }
 
 #middle-name-message {
 
     outline: none;
-    border: 1vw solid #4959A8;
+    border: 0;
     width: 65vw;
     height: 5vh;
     background-color: #e6eaff;
