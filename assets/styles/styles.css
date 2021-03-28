@@ -192,6 +192,7 @@ input {
 
     background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
     padding: 1vw;
+    display: grid;
 
 }
 
@@ -200,28 +201,41 @@ input {
     outline: none;
     border: 0;
     width: 65vw;
-    height: 5vh;
+    height: 3vh;
     background-color: #e6eaff;
+    color: #1f2226;
+    font-weight: bold;
+    padding: 3vw;
+    font-size: 1.7vh;
     
 }
 
-#middle-name-email {
+#middle-email-input {
 
     outline: none;
     border: 0;
     width: 65vw;
-    height: 5vh;
+    height: 3vh;
     background-color: #e6eaff;
+    color: #1f2226;
+    font-weight: bold;
+    padding: 3vw;
+    font-size: 1.7vh;
     
 }
 
-#middle-name-message {
+#middle-message-area {
 
     outline: none;
     border: 0;
     width: 65vw;
-    height: 5vh;
+    height: 12vh;
     background-color: #e6eaff;
-    padding-bottom: 10vh;
+    color: #1f2226;
+    font-weight: bold;
+    padding: 3vw;
+    resize: none;
+    font-size: 1.7vh;
+
     
 }
