@@ -239,3 +239,41 @@ input {
 
     
 }
+
+#middle-submit-button {
+
+    width: 30vw;
+    height: 6vh;
+    background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
+    border: none;
+    font-size: 4vw;
+    box-shadow: 1vw 1vw 0 0 #ebebeb;
+    transition: 300ms;
+    opacity: 0;
+    justify-self: center;
+    margin-top: 4vh;
+    animation-name: middle-submit-button;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+
+}
+
+@keyframes middle-submit-button {
+
+    100% {
+
+        opacity: 1
+
+    }
+
+}
+
+#middle-submit-button:hover {
+
+    margin-top: 3vh;
+    margin-right: 1vw;
+    box-shadow: 2vw 2vw 0 0 #ebebeb;
+
+}
