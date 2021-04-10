@@ -1,3 +1,9 @@
+/*
+
+    Styles for all pages.
+
+*/
+
 * {
 
     margin: 0;
@@ -7,12 +13,29 @@
 
 }
 
+html {
+
+    height: 100%;
+
+}
+
+body {
+
+    min-height: 100%;
+
+}
+
+/*
+
+    Styles for 'index.html'.
+
+*/
+
 #index-body {
 
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     height: 100vh;
-    background-color: #1f2226;
     background: radial-gradient(#2f3338, #1f2226 80%);
 
 }
@@ -39,13 +62,14 @@ input {
 
 }
 
-#middle {
+#index-middle {
 
     display: grid;
     justify-content: center;
     align-content: start;
     font-size: 7vh;
     text-align: center;
+    align-self: center;
 
 }
 
@@ -109,6 +133,7 @@ input {
     display: grid;
     justify-content: center;
     align-content: start;
+    align-self: start;
 
 }
 
@@ -149,12 +174,23 @@ input {
 
 }
 
-#contact-body {
+/*
+
+    Styles for 'contact.html'.
+
+*/
+
+#contact-middle {
 
     display: grid;
-    grid-template-rows: 1fr 2fr;
-    height: 100vh;
-    background-color: #1f2226;
+    justify-content: center;
+    font-size: 7vh;
+    margin-top: 5vh;
+
+}
+
+#contact-body {
+
     background: radial-gradient(#2f3338, #1f2226 80%);
 
 }
@@ -163,6 +199,22 @@ input {
 
     font-size: 7vh;
     text-align: center;
+    opacity: 0;
+    animation-name: top-page-name;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+
+}
+
+@keyframes top-page-name {
+
+    100% {
+
+        opacity: 1
+
+    }
 
 }
 
@@ -177,6 +229,25 @@ input {
 
     justify-self: start;
     padding-bottom: 1vh;
+    position: relative;
+    right: 15vw;
+    opacity: 0;
+    animation-name: middle-name-label;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms;
+
+}
+
+@keyframes middle-name-label {
+
+    100% {
+
+        opacity: 1;
+        right: 0;
+
+    }
 
 }
 
@@ -185,13 +256,32 @@ input {
     justify-self: start;
     padding-top: 4vh;
     padding-bottom: 1vh;
+    position: relative;
+    right: 15vw;
+    opacity: 0;
+    animation-name: middle-contact-label;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms;
+
+}
+
+@keyframes middle-contact-label {
+
+    100% {
+
+        opacity: 1;
+        right: 0;
+
+    }
 
 }
 
 .middle-container {
 
     background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
-    padding: 1vw;
+    padding: 1.5vw;
     display: grid;
 
 }
@@ -275,5 +365,43 @@ input {
     margin-top: 3vh;
     margin-right: 1vw;
     box-shadow: 2vw 2vw 0 0 #ebebeb;
+
+}
+
+/*
+
+    Styles for 'about.html'.
+
+*/
+
+#about-body {
+
+    height: 100%;
+    background: radial-gradient(#2f3338, #1f2226 80%);
+
+}
+
+#about-middle {
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vh;
+    margin-top: 5vh;
+
+}
+
+.about-middle-label {
+
+    font-size: 2.2vh;
+    color: #4959A8;
+    padding-bottom: 2vw;
+    font-weight: bold;
+
+}
+
+.about-middle-paragraph {
+
+    width: 280px;
 
 }
