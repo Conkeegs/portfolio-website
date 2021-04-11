@@ -402,7 +402,18 @@ input {
 
 .about-middle-paragraph {
 
-    width: 280px;
+    width: 75vw;
     line-height: 3vh;
+
+}
+
+.about-middle-break {
+
+    background-color: #4959A8;
+    opacity: .7;
+    width: 65vw;
+    height: 1px;
+    margin: auto;
+    margin-top: 5vh;
 
 }
