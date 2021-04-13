@@ -386,7 +386,7 @@ input {
     display: grid;
     align-items: center;
     justify-content: center;
-    font-size: 2vh;
+    /* font-size: 2vh; */
     margin-top: 5vh;
 
 }
@@ -404,6 +404,10 @@ input {
 
     width: 75vw;
     line-height: 3vh;
+    letter-spacing: .1vw;
+    font-size: 1.8vh;
+    font-weight: bold;
+    margin-bottom: 5vh;
 
 }
 
@@ -414,6 +418,24 @@ input {
     width: 65vw;
     height: 1px;
     margin: auto;
-    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
+
+}
+
+#about-middle-profile-picture {
+
+    width: 65vw;
+
+}
+
+.about-middle-container {
+
+    display: grid;
+    background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
+    padding: 1.5vw;
+    margin-bottom: 5vh;
+    width: fit-content;
+    justify-self: center;
 
 }
