@@ -50,6 +50,11 @@ input {
 
     height: 50px;
     width: 50px;
+
+}
+
+#top-logo-container {
+
     justify-self: end;
     padding: 5vw;
 
@@ -227,8 +232,11 @@ input {
 
 #middle-name-label {
 
+    font-size: 2.2vh;
+    color: #4959A8;
+    padding-bottom: 2vw;
+    font-weight: bold;
     justify-self: start;
-    padding-bottom: 1vh;
     position: relative;
     right: 15vw;
     opacity: 0;
@@ -253,9 +261,12 @@ input {
 
 .middle-contact-label {
 
+    font-size: 2.2vh;
+    color: #4959A8;
+    padding-bottom: 2vw;
+    font-weight: bold;
     justify-self: start;
     padding-top: 4vh;
-    padding-bottom: 1vh;
     position: relative;
     right: 15vw;
     opacity: 0;
