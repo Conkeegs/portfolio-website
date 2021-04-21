@@ -434,13 +434,13 @@ input {
 
 }
 
-#about-middle-profile-picture {
+#about-middle-picture {
 
     width: 65vw;
 
 }
 
-.about-middle-container {
+#about-middle-picture-container {
 
     display: grid;
     background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
@@ -448,5 +448,21 @@ input {
     margin-bottom: 5vh;
     width: fit-content;
     justify-self: center;
+    opacity: 0;
+    animation-name: about-middle-picture-container;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+
+}
+
+@keyframes about-middle-picture-container {
+
+    100% {
+
+        opacity: 1
+
+    }
 
 }
