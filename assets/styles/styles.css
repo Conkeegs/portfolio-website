@@ -50,6 +50,25 @@ input {
 
     height: 50px;
     width: 50px;
+    position: relative;
+    left: 15vw;
+    opacity: 0;
+    animation-name: top-logo;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms;
+
+}
+
+@keyframes top-logo {
+
+    100% {
+
+        opacity: 1;
+        left: 0;
+
+    }
 
 }
 
@@ -365,7 +384,7 @@ input {
 
     100% {
 
-        opacity: 1
+        opacity: 1;
 
     }
 
@@ -408,6 +427,25 @@ input {
     color: #4959A8;
     padding-bottom: 2vw;
     font-weight: bold;
+    position: relative;
+    right: 15vw;
+    opacity: 0;
+    animation-name: about-middle-label;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms;
+
+}
+
+@keyframes about-middle-label {
+
+    100% {
+
+        opacity: 1;
+        right: 0;
+
+    }
 
 }
 
