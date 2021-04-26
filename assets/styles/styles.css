@@ -224,6 +224,10 @@ input {
     font-size: 7vh;
     text-align: center;
     opacity: 0;
+    color: #4959A8;
+    align-self: end;
+    text-shadow: 2px 2px white; 
+    font-weight: bold;
     animation-name: top-page-name;
     animation-duration: 300ms;
     animation-timing-function: ease-out;
