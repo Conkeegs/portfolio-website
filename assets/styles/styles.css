@@ -375,7 +375,7 @@ input {
     transition: 300ms;
     opacity: 0;
     justify-self: center;
-    margin-top: 4vh;
+    margin-top: 5vh;
     animation-name: middle-submit-button;
     animation-duration: 300ms;
     animation-timing-function: ease-out;
@@ -464,18 +464,6 @@ input {
 
 }
 
-.about-middle-break {
-
-    background-color: #4959A8;
-    opacity: .7;
-    width: 65vw;
-    height: 1px;
-    margin: auto;
-    margin-bottom: 5vh;
-    background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
-
-}
-
 #about-middle-picture {
 
     width: 65vw;
@@ -507,5 +495,25 @@ input {
         opacity: 1
 
     }
+
+}
+
+/*
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Styles common to multiple pages.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+*/
+
+.break {
+
+    background-color: #4959A8;
+    opacity: .7;
+    width: 65vw;
+    height: 1px;
+    margin: auto;
+    margin-bottom: 5vh;
+    background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
 
 }
