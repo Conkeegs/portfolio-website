@@ -148,19 +148,19 @@ input {
 
 }
 
-.middle-styled-letter {
+.index-middle-styled-letter {
 
     color: #4959A8;
     font-size: 10vh;
 
 }
 
-.middle-styled-letters {
+.index-middle-styled-letters {
 
     position: relative;
     right: 15vw;
     opacity: 0;
-    animation-name: middle-styled-letters;
+    animation-name: index-middle-styled-letters;
     animation-duration: 300ms;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
@@ -168,7 +168,7 @@ input {
 
 }
 
-@keyframes middle-styled-letters {
+@keyframes index-middle-styled-letters {
 
     100% {
 
@@ -253,7 +253,7 @@ input {
 
 }
 
-#bottom {
+#index-bottom {
 
     display: grid;
     justify-content: center;
@@ -262,7 +262,7 @@ input {
 
 }
 
-#bottom-button {
+#index-bottom-button {
 
     width: 30vw;
     height: 6vh;
@@ -291,7 +291,7 @@ input {
 
 }
 
-#bottom-button:hover {
+#index-bottom-button:hover {
 
     margin-top: 4vh;
     margin-right: 1vw;
@@ -322,14 +322,14 @@ Styles for 'contact.html'
 
 }
 
-#middle-form {
+#contact-middle-form {
 
     font-size: 3vh;
     display: grid;
 
 }
 
-#middle-name-label {
+#contact-middle-name-label {
 
     font-size: 2.2vh;
     color: #4959A8;
@@ -339,7 +339,7 @@ Styles for 'contact.html'
     position: relative;
     right: 15vw;
     opacity: 0;
-    animation-name: middle-name-label;
+    animation-name: contact-middle-name-label;
     animation-duration: 300ms;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
@@ -347,7 +347,7 @@ Styles for 'contact.html'
 
 }
 
-@keyframes middle-name-label {
+@keyframes contact-middle-name-label {
 
     100% {
 
@@ -358,7 +358,7 @@ Styles for 'contact.html'
 
 }
 
-.middle-contact-label {
+.contact-middle-contact-label {
 
     font-size: 2.2vh;
     color: #4959A8;
@@ -369,7 +369,7 @@ Styles for 'contact.html'
     position: relative;
     right: 15vw;
     opacity: 0;
-    animation-name: middle-contact-label;
+    animation-name: contact-middle-contact-label;
     animation-duration: 300ms;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
@@ -377,7 +377,7 @@ Styles for 'contact.html'
 
 }
 
-@keyframes middle-contact-label {
+@keyframes contact-middle-contact-label {
 
     100% {
 
@@ -388,7 +388,7 @@ Styles for 'contact.html'
 
 }
 
-.middle-container {
+.contact-middle-container {
 
     background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
     padding: 1.5vw;
@@ -396,7 +396,7 @@ Styles for 'contact.html'
 
 }
 
-#middle-name-input {
+#contact-middle-name-input {
 
     outline: none;
     border: 0;
@@ -410,7 +410,7 @@ Styles for 'contact.html'
     
 }
 
-#middle-email-input {
+#contact-middle-email-input {
 
     outline: none;
     border: 0;
@@ -424,7 +424,7 @@ Styles for 'contact.html'
     
 }
 
-#middle-message-area {
+#contact-middle-message-area {
 
     outline: none;
     border: 0;
@@ -440,7 +440,7 @@ Styles for 'contact.html'
     
 }
 
-#middle-submit-button {
+#contact-middle-submit-button {
 
     width: 30vw;
     height: 6vh;
@@ -452,7 +452,7 @@ Styles for 'contact.html'
     opacity: 0;
     justify-self: center;
     margin-top: 5vh;
-    animation-name: middle-submit-button;
+    animation-name: contact-middle-submit-button;
     animation-duration: 300ms;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
@@ -460,7 +460,7 @@ Styles for 'contact.html'
 
 }
 
-@keyframes middle-submit-button {
+@keyframes contact-middle-submit-button {
 
     100% {
 
@@ -470,7 +470,7 @@ Styles for 'contact.html'
 
 }
 
-#middle-submit-button:hover {
+#contact-middle-submit-button:hover {
 
     margin-top: 3vh;
     margin-right: 1vw;
