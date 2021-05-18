@@ -16,7 +16,7 @@ Styles common to multiple pages.
 
 html {
 
-    height: 100%;
+    height: fit-content;
 
 }
 
@@ -41,23 +41,8 @@ body {
 #top {
 
     display: grid;
-    grid-template-areas: "top-burger top-logo-container"
+    grid-template-areas: "top-burger-container top-logo-container"
                          "top-page-name top-page-name";
-
-}
-
-#top-logo-container {
-
-    justify-self: end;
-    padding: 5vw;
-    grid-area: top-logo-container;
-
-}
-
-#top-burger {
-
-    width: 50px;
-    grid-area: top-burger;
 
 }
 
@@ -87,14 +72,55 @@ body {
 
 }
 
+#top-logo-container {
+
+    justify-self: end;
+    padding: 8vw;
+    grid-area: top-logo-container;
+
+}
+
+#top-burger {
+
+    height: 50px;
+    width: 50px;
+    position: relative;
+    right: 15vw;
+    opacity: 0;
+    animation-name: top-burger;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms;
+
+}
+
+@keyframes top-burger {
+
+    100% {
+
+        opacity: 1;
+        right: 0;
+
+    }
+
+}
+
+#top-burger-container {
+
+    justify-self: start;
+    padding: 8vw;
+    grid-area: top-burger-container;
+
+}
+
 #top-page-name {
 
     font-size: 7vh;
     text-align: center;
     opacity: 0;
-    color: #4959A8;
-    align-self: end;
-    text-shadow: 2px 2px white;
+    color: #e6eaff;
+    padding-top: 4vh;
     font-weight: bold;
     grid-area: top-page-name;
     animation-name: top-page-name;
@@ -451,7 +477,7 @@ Styles for 'contact.html'
     transition: 300ms;
     opacity: 0;
     justify-self: center;
-    margin-top: 5vh;
+    margin: 5vh;
     animation-name: contact-middle-submit-button;
     animation-duration: 300ms;
     animation-timing-function: ease-out;
@@ -498,7 +524,6 @@ Styles for 'about.html'
     display: grid;
     align-items: center;
     justify-content: center;
-    /* font-size: 2vh; */
     margin-top: 5vh;
 
 }
@@ -573,5 +598,21 @@ Styles for 'about.html'
         opacity: 1
 
     }
+
+}
+
+/*
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Styles for 'skills.html'
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+*/
+#skills-middle {
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
 
 }
