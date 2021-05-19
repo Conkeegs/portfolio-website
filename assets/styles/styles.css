@@ -208,7 +208,7 @@ input {
 #index-top {
 
     display: grid;
-    grid-template-areas: "index-top-burger index-top-logo-container"
+    grid-template-areas: "index-top-burger-container index-top-logo-container"
                          "index-top-web-developer index-top-web-developer";
 
 }
@@ -216,15 +216,16 @@ input {
 #index-top-logo-container {
 
     justify-self: end;
-    padding: 5vw;
+    padding: 8vw;
     grid-area: index-top-logo-container;
 
 }
 
-#index-top-burger {
+#index-top-burger-container {
 
-    width: 50px;
-    grid-area: index-top-burger;
+    justify-self: start;
+    padding: 8vw;
+    grid-area: index-top-burger-container;
 
 }
 
@@ -258,7 +259,6 @@ input {
 
     width: 75vw;
     margin: auto;
-    grid-row: 2;
     opacity: 0;
     grid-area: index-top-web-developer;
     animation-name: index-top-web-developer;
