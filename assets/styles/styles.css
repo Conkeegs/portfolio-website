@@ -135,9 +135,35 @@ body {
 
     100% {
 
-        opacity: 1
+        opacity: 1;
 
     }
+
+}
+
+#drawer {
+
+    background-color: white;
+    position: absolute;
+    display: none;
+    opacity: 0;
+    height: 100%;
+    width: 90vw;
+    border-radius: 0 10vw 10vw 0;
+    z-index: 2;
+    right: 80vw;
+
+}
+
+#cover {
+
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: none;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
 
 }
 
@@ -273,7 +299,7 @@ input {
 
     100% {
 
-        opacity: 1
+        opacity: 1;
 
     }
 
@@ -311,7 +337,7 @@ input {
 
     100% {
 
-        opacity: 1
+        opacity: 1;
 
     }
 
@@ -595,7 +621,7 @@ Styles for 'about.html'
 
     100% {
 
-        opacity: 1
+        opacity: 1;
 
     }
 
