@@ -37,7 +37,8 @@ function rotateBurger() {
 
     if (drawerOpened) {
 
-        topBurgerContainer.style.left = "60vw";
+        topBurgerContainer.style.left = "55vw";
+        topBurgerContainer.style.transition = "230ms";
 
     }
     else {
@@ -75,7 +76,7 @@ function openDrawer() {
 }
 
 /**
- * Closed side drawer when burger icon is clicked again.
+ * Closes side drawer when burger icon is clicked again.
  */
  function closeDrawer() {
 
@@ -93,7 +94,7 @@ function openDrawer() {
 
         sideDrawer.style.right = "80vw";
         sideDrawer.style.opacity = "0";
-        sideDrawer.style.transition = "230ms";
+        sideDrawer.style.transition = "150ms";
 
     }, 250);
     sideDrawer.style.display = "block";

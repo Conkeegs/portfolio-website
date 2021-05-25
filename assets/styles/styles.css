@@ -114,6 +114,8 @@ body {
     padding: 8vw;
     grid-area: top-burger-container;
     z-index: 3;
+    position: relative;
+    left: 0;
 
 }
 
