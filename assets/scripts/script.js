@@ -37,13 +37,24 @@ function rotateBurger() {
 
     if (drawerOpened) {
 
-        topBurgerContainer.style.left = "55vw";
-        topBurgerContainer.style.transition = "230ms";
+        setTimeout(function() {
+
+            topBurgerContainer.style.left = "55vw";
+            topBurgerContainer.style.transform = "rotate(90deg)";
+            topBurgerContainer.style.transition = "215ms";
+
+        },250);
 
     }
     else {
 
-        topBurgerContainer.style.left = null;
+        setTimeout(function() {
+
+            topBurgerContainer.style.left = null;
+            topBurgerContainer.style.transform = "rotate(0)";
+            topBurgerContainer.style.transition = "150ms";
+
+        },250);
 
     }
     
@@ -69,7 +80,7 @@ function openDrawer() {
 
         sideDrawer.style.right = "10vw";
         sideDrawer.style.opacity = "1";
-        sideDrawer.style.transition = "230ms";
+        sideDrawer.style.transition = "215ms";
 
     }, 250);
 
