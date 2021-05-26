@@ -1,7 +1,7 @@
 /*
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Scripts common to multiple pages
+Scripts for 'index.html'
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 */
@@ -32,7 +32,7 @@ topBurger.addEventListener("click", function () {
  */
 function rotateBurger() {
 
-    let topBurgerContainer = document.getElementById("top-burger-container");
+    let topBurgerContainer = document.getElementById("index-top-burger-container");
     topBurgerContainer.style.transition = "230ms";
 
     if (drawerOpened) {
@@ -73,7 +73,7 @@ function openDrawer() {
         cover.style.opacity = ".5";
         cover.style.transition = "200ms";
 
-    }, 10);
+    }, 0);
 
     sideDrawer.style.display = "block";
     setTimeout(function() {

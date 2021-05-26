@@ -74,6 +74,8 @@ body {
 
 #top-logo-container {
 
+    max-height: 50px;
+    max-width: 55px;
     justify-self: end;
     padding: 8vw;
     grid-area: top-logo-container;
@@ -110,6 +112,8 @@ body {
 
 #top-burger-container {
 
+    max-height: 50px;
+    max-width: 55px;
     justify-self: start;
     padding: 8vw;
     grid-area: top-burger-container;
@@ -254,9 +258,14 @@ input {
 
 #index-top-burger-container {
 
+    max-height: 50px;
+    max-width: 55px;
     justify-self: start;
     padding: 8vw;
     grid-area: index-top-burger-container;
+    z-index: 3;
+    position: relative;
+    left: 0;
 
 }
 
