@@ -176,6 +176,34 @@ body {
 
 }
 
+.middle-label {
+
+    font-size: 2.2vh;
+    color: #4959A8;
+    padding-bottom: 2vw;
+    font-weight: bold;
+    position: relative;
+    right: 15vw;
+    opacity: 0;
+    animation-name: middle-label;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms;
+
+}
+
+@keyframes middle-label {
+
+    100% {
+
+        opacity: 1;
+        right: 0;
+
+    }
+
+}
+
 /*
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -564,35 +592,7 @@ Styles for 'about.html'
     display: grid;
     align-items: center;
     justify-content: center;
-    margin-top: 5vh;
-
-}
-
-.about-middle-label {
-
-    font-size: 2.2vh;
-    color: #4959A8;
-    padding-bottom: 2vw;
-    font-weight: bold;
-    position: relative;
-    right: 15vw;
-    opacity: 0;
-    animation-name: about-middle-label;
-    animation-duration: 300ms;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-    animation-delay: 800ms;
-
-}
-
-@keyframes about-middle-label {
-
-    100% {
-
-        opacity: 1;
-        right: 0;
-
-    }
+    margin: 5vh auto 0 auto;
 
 }
 
@@ -648,11 +648,67 @@ Styles for 'skills.html'
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 */
+#skills-body {
+
+    height: 100%;
+    background: radial-gradient(#2f3338, #1f2226 80%);
+
+}
+
 #skills-middle {
+
+    margin-top: 5vh;
+
+}
+
+.skills-middle-container-label {
+
+    font-size: 5vh;
+    color: #4959A8;
+    font-weight: bold;
+    position: relative;
+    right: 15vw;
+    opacity: 0;
+    transform: rotate(-90deg);
+    display: block;
+    align-self: center;
+    grid-area: skills-middle-container-label;
+    animation-name: skills-middle-container-label;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms;
+
+}
+
+@keyframes skills-middle-container-label {
+
+    100% {
+
+        opacity: 1;
+        right: 0;
+
+    }
+
+}
+
+.skills-middle-container-skill {
+
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    background-color: blue;
+    grid-area: skills-middle-container-skill;
+
+}
+
+.skills-middle-container {
 
     display: grid;
     align-items: center;
     justify-content: center;
-    margin-top: 5vh;
+    grid-template-columns: .5fr 1fr;
+    grid-template-areas: "skills-middle-container-label skills-middle-container-skill";
+    margin-bottom: 5vh;
 
 }
