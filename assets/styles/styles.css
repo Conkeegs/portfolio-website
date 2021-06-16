@@ -403,6 +403,7 @@ Styles for 'contact.html'
 
 #contact-middle {
 
+    width: 100%;
     display: grid;
     justify-content: center;
     font-size: 7vh;
@@ -589,6 +590,7 @@ Styles for 'about.html'
 
 #about-middle {
 
+    width: 100%;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -657,6 +659,7 @@ Styles for 'skills.html'
 
 #skills-middle {
 
+    width: 100%;
     margin-top: 5vh;
 
 }
@@ -692,16 +695,6 @@ Styles for 'skills.html'
 
 }
 
-.skills-middle-container-skill {
-
-    width: 50vw;
-    height: 50vw;
-    border-radius: 50%;
-    background-color: blue;
-    grid-area: skills-middle-container-skill;
-
-}
-
 .skills-middle-container {
 
     display: grid;
@@ -710,5 +703,47 @@ Styles for 'skills.html'
     grid-template-columns: .5fr 1fr;
     grid-template-areas: "skills-middle-container-label skills-middle-container-skill";
     margin-bottom: 5vh;
+
+}
+
+.skills-middle-container-background {
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    grid-area: skills-middle-container-skill;
+    background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
+    padding: 1.5vw;
+
+}
+
+.skills-middle-container-background-skill {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border-radius: 50%;
+    height: 50vw;
+    width: 50vw;
+    overflow: hidden;
+
+}
+
+.skills-middle-container-background-skill-spinner-left {
+
+    background-color: #ffb561;
+    transform-origin: right;
+    transition: 300ms;
+
+}
+
+.skills-middle-container-background-skill-spinner-right {
+
+    background-color: #ffb561;
+    transform-origin: left;
+    transition: 300ms;
 
 }
