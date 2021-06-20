@@ -111,38 +111,3 @@ function openDrawer() {
     sideDrawer.style.display = "block";
 
 }
-
-/*
-
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Scripts for skills percentages.
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-*/
-let skills = document.getElementsByClassName("skills-middle-container-background-skill");
-
-for (let skill of skills) {
-
-    rotateSkill(skill);
-
-}
-
-function rotateSkill(skill) {
-
-    let spinnerLeft = skill.children[0];
-    let spinnerRight = skill.children[1];
-
-     if (parseInt(skill.textContent.trim()) <= 50) {
-
-        spinnerRight.style.transform = "rotate(30deg)";
-
-     }
-     else {
-
-        console.log(skill.textContent.trim());
-
-        spinnerLeft.style.transform = "rotate(30deg)";
-
-     }
-
-}

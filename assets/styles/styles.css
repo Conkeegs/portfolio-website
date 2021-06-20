@@ -729,6 +729,7 @@ Styles for 'skills.html'
     height: 50vw;
     width: 50vw;
     overflow: hidden;
+    position: relative;
 
 }
 
@@ -745,5 +746,20 @@ Styles for 'skills.html'
     background-color: #ffb561;
     transform-origin: left;
     transition: 300ms;
+
+}
+
+.skills-middle-container-background-skill-spinner-cover {
+
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 50%;
+
+}
+
+.skills-middle-container-background-skill-percentage {
+
+    position: absolute;
 
 }
