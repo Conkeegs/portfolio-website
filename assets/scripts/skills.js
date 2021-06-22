@@ -16,8 +16,7 @@ for (let skill of skills) {
 function rotateSkill(skill) {
 
     let spinnerPercentage = parseInt(skill.children[0].textContent.trim());
-    let rotateDegree = 360 * parseFloat(`.${spinnerPercentage}`);
-    console.log(rotateDegree);
+    let rotateDegree = 3.6 * spinnerPercentage;
     let spinnerLeft = skill.children[1];
     let spinnerRight = skill.children[2];
     let spinnerCover = skill.children[3];
