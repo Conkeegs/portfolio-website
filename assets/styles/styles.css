@@ -5,29 +5,23 @@ Styles common to multiple pages.
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 */
-* {
 
+* {
     margin: 0;
     padding: 0;
     font-family: 'Spartan', sans-serif;
     color: #ebebeb;
-
 }
 
 html {
-
     height: fit-content;
-
 }
 
 body {
-
     min-height: 100%;
-
 }
 
 .break {
-
     background-color: #4959A8;
     opacity: .7;
     width: 65vw;
@@ -35,19 +29,14 @@ body {
     margin: auto;
     margin-bottom: 5vh;
     background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
-
 }
 
 #top {
-
     display: grid;
-    grid-template-areas: "top-burger-container top-logo-container"
-                         "top-page-name top-page-name";
-
+    grid-template-areas: "top-burger-container top-logo-container" "top-page-name top-page-name";
 }
 
 #top-logo {
-
     height: 50px;
     width: 50px;
     position: relative;
@@ -58,33 +47,25 @@ body {
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-delay: 800ms;
-
 }
 
 @keyframes top-logo {
-
     100% {
-
         opacity: 1;
         left: 0;
-
     }
-
 }
 
 #top-logo-container {
-
     max-height: 50px;
     max-width: 55px;
     justify-self: end;
     padding: 8vw;
     grid-area: top-logo-container;
     position: relative;
-
 }
 
 #top-burger {
-
     height: 50px;
     width: 50px;
     position: relative;
@@ -96,22 +77,16 @@ body {
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-delay: 800ms;
-
 }
 
 @keyframes top-burger {
-
     100% {
-
         opacity: 1;
         right: 0;
-
     }
-
 }
 
 #top-burger-container {
-
     max-height: 50px;
     max-width: 55px;
     justify-self: start;
@@ -120,11 +95,9 @@ body {
     z-index: 3;
     position: relative;
     left: 0;
-
 }
 
 #top-page-name {
-
     font-size: 7vh;
     text-align: center;
     opacity: 0;
@@ -137,21 +110,15 @@ body {
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-delay: 500ms;
-
 }
 
 @keyframes top-page-name {
-
     100% {
-
         opacity: 1;
-
     }
-
 }
 
 #drawer {
-
     background-color: white;
     position: absolute;
     display: none;
@@ -161,11 +128,9 @@ body {
     border-radius: 0 10vw 10vw 0;
     z-index: 2;
     right: 80vw;
-
 }
 
 #cover {
-
     height: 100%;
     width: 100%;
     background-color: black;
@@ -173,11 +138,9 @@ body {
     opacity: 0;
     position: absolute;
     z-index: 1;
-
 }
 
 .middle-label {
-
     font-size: 2.2vh;
     color: #4959A8;
     padding-bottom: 2vw;
@@ -190,19 +153,15 @@ body {
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-delay: 800ms;
-
 }
 
 @keyframes middle-label {
-
     100% {
-
         opacity: 1;
         right: 0;
-
     }
-
 }
+
 
 /*
 
@@ -211,41 +170,33 @@ Styles for 'index.html'
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 */
-#index-body {
 
+#index-body {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     height: 100vh;
     background: radial-gradient(#2f3338, #1f2226 80%);
-
 }
 
 input {
-
     display: block;
-
 }
 
 #index-middle {
-
     display: grid;
     justify-content: center;
     align-content: start;
     font-size: 7vh;
     text-align: center;
     align-self: center;
-
 }
 
 .index-middle-styled-letter {
-
     color: #4959A8;
     font-size: 10vh;
-
 }
 
 .index-middle-styled-letters {
-
     position: relative;
     right: 15vw;
     opacity: 0;
@@ -254,38 +205,27 @@ input {
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-delay: 800ms;
-
 }
 
 @keyframes index-middle-styled-letters {
-
     100% {
-
         opacity: 1;
         right: 0;
-
     }
-
 }
 
 #index-top {
-
     display: grid;
-    grid-template-areas: "index-top-burger-container index-top-logo-container"
-                         "index-top-web-developer index-top-web-developer";
-
+    grid-template-areas: "index-top-burger-container index-top-logo-container" "index-top-web-developer index-top-web-developer";
 }
 
 #index-top-logo-container {
-
     justify-self: end;
     padding: 8vw;
     grid-area: index-top-logo-container;
-
 }
 
 #index-top-burger-container {
-
     max-height: 50px;
     max-width: 55px;
     justify-self: start;
@@ -294,11 +234,9 @@ input {
     z-index: 3;
     position: relative;
     left: 0;
-
 }
 
 #index-top-logo {
-
     height: 50px;
     width: 50px;
     position: relative;
@@ -309,22 +247,16 @@ input {
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-delay: 800ms;
-
 }
 
 @keyframes index-top-logo {
-
     100% {
-
         opacity: 1;
         left: 0;
-
     }
-
 }
 
 #index-top-web-developer {
-
     width: 75vw;
     margin: auto;
     opacity: 0;
@@ -334,30 +266,22 @@ input {
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-delay: 500ms;
-
 }
 
 @keyframes index-top-web-developer {
-
     100% {
-
         opacity: 1;
-
     }
-
 }
 
 #index-bottom {
-
     display: grid;
     justify-content: center;
     align-content: start;
     align-self: start;
-
 }
 
 #index-bottom-button {
-
     width: 30vw;
     height: 6vh;
     background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
@@ -372,26 +296,20 @@ input {
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-delay: 500ms;
-
 }
 
 @keyframes bottom-button {
-
     100% {
-
         opacity: 1;
-
     }
-
 }
 
 #index-bottom-button:hover {
-
     margin-top: 4vh;
     margin-right: 1vw;
     box-shadow: 2vw 2vw 0 0 #ebebeb;
-
 }
+
 
 /*
 
@@ -402,30 +320,23 @@ Styles for 'contact.html'
 */
 
 #contact-middle {
-
     width: 100%;
     display: grid;
     justify-content: center;
     font-size: 7vh;
     margin-top: 5vh;
-
 }
 
 #contact-body {
-
     background: radial-gradient(#2f3338, #1f2226 80%);
-
 }
 
 #contact-middle-form {
-
     font-size: 3vh;
     display: grid;
-
 }
 
 #contact-middle-name-label {
-
     font-size: 2.2vh;
     color: #4959A8;
     padding-bottom: 2vw;
@@ -439,22 +350,16 @@ Styles for 'contact.html'
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-delay: 800ms;
-
 }
 
 @keyframes contact-middle-name-label {
-
     100% {
-
         opacity: 1;
         right: 0;
-
     }
-
 }
 
 .contact-middle-contact-label {
-
     font-size: 2.2vh;
     color: #4959A8;
     padding-bottom: 2vw;
@@ -469,30 +374,22 @@ Styles for 'contact.html'
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-delay: 800ms;
-
 }
 
 @keyframes contact-middle-contact-label {
-
     100% {
-
         opacity: 1;
         right: 0;
-
     }
-
 }
 
 .contact-middle-container {
-
     background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
     padding: 1.5vw;
     display: grid;
-
 }
 
 #contact-middle-name-input {
-
     outline: none;
     border: 0;
     width: 65vw;
@@ -502,11 +399,9 @@ Styles for 'contact.html'
     font-weight: bold;
     padding: 3vw;
     font-size: 1.7vh;
-    
 }
 
 #contact-middle-email-input {
-
     outline: none;
     border: 0;
     width: 65vw;
@@ -516,11 +411,9 @@ Styles for 'contact.html'
     font-weight: bold;
     padding: 3vw;
     font-size: 1.7vh;
-    
 }
 
 #contact-middle-message-area {
-
     outline: none;
     border: 0;
     width: 65vw;
@@ -531,12 +424,9 @@ Styles for 'contact.html'
     padding: 3vw;
     resize: none;
     font-size: 1.7vh;
-
-    
 }
 
 #contact-middle-submit-button {
-
     width: 30vw;
     height: 6vh;
     background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
@@ -552,26 +442,20 @@ Styles for 'contact.html'
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-delay: 500ms;
-
 }
 
 @keyframes contact-middle-submit-button {
-
     100% {
-
         opacity: 1;
-
     }
-
 }
 
 #contact-middle-submit-button:hover {
-
     margin-top: 3vh;
     margin-right: 1vw;
     box-shadow: 2vw 2vw 0 0 #ebebeb;
-
 }
+
 
 /*
 
@@ -582,41 +466,32 @@ Styles for 'about.html'
 */
 
 #about-body {
-
     height: 100%;
     background: radial-gradient(#2f3338, #1f2226 80%);
-
 }
 
 #about-middle {
-
     width: 100%;
     display: grid;
     align-items: center;
     justify-content: center;
     margin: 5vh auto 0 auto;
-
 }
 
 .about-middle-paragraph {
-
     width: 75vw;
     line-height: 3vh;
     letter-spacing: .1vw;
     font-size: 1.8vh;
     font-weight: bold;
     margin-bottom: 5vh;
-
 }
 
 #about-middle-picture {
-
     width: 65vw;
-
 }
 
 #about-middle-picture-container {
-
     display: grid;
     background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
     padding: 1.5vw;
@@ -630,18 +505,14 @@ Styles for 'about.html'
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-delay: 500ms;
-
 }
 
 @keyframes about-middle-picture-container {
-
     100% {
-
         opacity: 1;
-
     }
-
 }
+
 
 /*
 
@@ -650,22 +521,18 @@ Styles for 'skills.html'
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 */
-#skills-body {
 
+#skills-body {
     height: 100%;
     background: radial-gradient(#2f3338, #1f2226 80%);
-
 }
 
 #skills-middle {
-
     width: 100%;
     margin-top: 5vh;
-
 }
 
 .skills-middle-container-label {
-
     font-size: 5vh;
     color: #4959A8;
     font-weight: bold;
@@ -681,33 +548,25 @@ Styles for 'skills.html'
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-delay: 800ms;
-
 }
 
 @keyframes skills-middle-container-label {
-
     100% {
-
         opacity: 1;
         right: 0;
-
     }
-
 }
 
 .skills-middle-container {
-
     display: grid;
     align-items: center;
     justify-content: center;
     grid-template-columns: .5fr 1fr;
     grid-template-areas: "skills-middle-container-label skills-middle-container-skill";
     margin-bottom: 5vh;
-
 }
 
 .skills-middle-container-background {
-
     display: grid;
     align-items: center;
     justify-items: center;
@@ -717,11 +576,9 @@ Styles for 'skills.html'
     grid-area: skills-middle-container-skill;
     background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
     padding: 1.5vw;
-
 }
 
 .skills-middle-container-background-skill {
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: white;
@@ -730,36 +587,28 @@ Styles for 'skills.html'
     width: 50vw;
     overflow: hidden;
     position: relative;
-
 }
 
 .skills-middle-container-background-skill-spinner-left {
-
     background-color: #ffb561;
     transform-origin: right;
-    transition: 300ms;
-
 }
 
 .skills-middle-container-background-skill-spinner-right {
-
     background-color: #ffb561;
     transform-origin: left;
-    transition: 300ms;
-
+    transition-timing-function: ease-out;
+    z-index: 1;
 }
 
 .skills-middle-container-background-skill-spinner-cover {
-
     position: absolute;
     background-color: white;
     height: 100%;
     width: 50%;
-
+    z-index: 0;
 }
 
 .skills-middle-container-background-skill-percentage {
-
     position: absolute;
-
 }
