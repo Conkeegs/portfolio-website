@@ -533,7 +533,7 @@ Styles for 'skills.html'
 }
 
 .skills-middle-container-label {
-    font-size: 5vh;
+    font-size: 2.8vh;
     color: #4959A8;
     font-weight: bold;
     position: relative;
@@ -542,6 +542,7 @@ Styles for 'skills.html'
     transform: rotate(-90deg);
     display: block;
     align-self: center;
+    text-align: center;
     grid-area: skills-middle-container-label;
     animation-name: skills-middle-container-label;
     animation-duration: 300ms;
