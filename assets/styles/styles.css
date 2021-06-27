@@ -590,19 +590,30 @@ Styles for 'skills.html'
     position: relative;
 }
 
-.skills-middle-container-background-skill-spinner-left {
+.skills-middle-container-background-skill-cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 2;
+    transition: 500ms;
+}
+
+.skills-middle-container-background-skill-spinnerLeft {
     background-color: #ffb561;
     transform-origin: right;
 }
 
-.skills-middle-container-background-skill-spinner-right {
+.skills-middle-container-background-skill-spinnerRight {
     background-color: #ffb561;
     transform-origin: left;
     transition-timing-function: ease-out;
     z-index: 1;
 }
 
-.skills-middle-container-background-skill-spinner-cover {
+.skills-middle-container-background-skill-spinnerCover {
     position: absolute;
     background-color: white;
     height: 100%;
@@ -612,4 +623,8 @@ Styles for 'skills.html'
 
 .skills-middle-container-background-skill-percentage {
     position: absolute;
+    margin: auto;
+    color: white;
+    z-index: 3;
+    font-size: 8vw;
 }

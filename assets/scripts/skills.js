@@ -21,23 +21,25 @@ for (let skill of skills) {
 function rotateSkill(skill) {
 
     const rotateMultiplier = 3.6;
-    let spinnerPercentage = parseInt(skill.children[0].textContent.trim());
+    let spinnerPercentage = parseInt(skill.children[1].textContent.trim().replace("%", ""));
     let rotateDegree = rotateMultiplier * spinnerPercentage;
 
-    let spinnerLeft = skill.children[1];
-    let spinnerRight = skill.children[2];
-    let spinnerCover = skill.children[3];
+    let skillCover = skill.children[0];
+    let spinnerLeft = skill.children[2];
+    let spinnerRight = skill.children[3];
 
     if (spinnerPercentage <= 50) {
-
         spinnerLeft.style.transitionTimingFunction = "ease-in-out";
 
         spinnerRight.style.display = "none";
         spinnerLeft.style.transition = "500ms";
-        setTimeout(() => spinnerLeft.style.transform = `rotate(${rotateDegree}deg)`, 10);
+        setTimeout(function() {
 
+            spinnerLeft.style.transform = `rotate(${rotateDegree}deg)`;
+            setTimeout(() => skillCover.style.opacity = "0.4", 500);
+
+        }, 10);
     } else {
-
         spinnerRight.style.opacity = "0.0";
         spinnerRight.style.transitionProperty = "opacity, transform";
         spinnerRight.style.transitionDuration = "0s, 250ms";
@@ -46,16 +48,12 @@ function rotateSkill(skill) {
         spinnerLeft.style.transitionTimingFunction = "ease-in";
 
         setTimeout(function() {
-
             spinnerLeft.style.transform = "rotate(180deg)";
             setTimeout(function() {
-
                 spinnerRight.style.opacity = "1.0";
                 spinnerRight.style.transform = `rotate(${rotateDegree - 180}deg)`;
-
             }, 250);
-
-
+            setTimeout(() => skillCover.style.opacity = "0.4", 500);
         }, 10);
 
     }
