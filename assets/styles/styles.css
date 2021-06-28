@@ -22,18 +22,18 @@ body {
 }
 
 .break {
-    background-color: #4959A8;
-    opacity: .7;
+    background-color: #4959a8;
+    opacity: 0.7;
     width: 65vw;
     height: 1px;
     margin: auto;
     margin-bottom: 5vh;
-    background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
+    background: linear-gradient(-60deg, #4959a8 30%, #8494e3);
 }
 
 #top {
     display: grid;
-    grid-template-areas: "top-burger-container top-logo-container" "top-page-name top-page-name";
+    grid-template-areas: 'top-burger-container top-logo-container' 'top-page-name top-page-name';
 }
 
 #top-logo {
@@ -71,7 +71,6 @@ body {
     position: relative;
     right: 15vw;
     opacity: 0;
-    z-index: 3;
     animation-name: top-burger;
     animation-duration: 300ms;
     animation-timing-function: ease-out;
@@ -92,7 +91,7 @@ body {
     justify-self: start;
     padding: 8vw;
     grid-area: top-burger-container;
-    z-index: 3;
+    z-index: 5;
     position: relative;
     left: 0;
 }
@@ -126,7 +125,7 @@ body {
     height: 100%;
     width: 90vw;
     border-radius: 0 10vw 10vw 0;
-    z-index: 2;
+    z-index: 4;
     right: 80vw;
 }
 
@@ -142,7 +141,7 @@ body {
 
 .middle-label {
     font-size: 2.2vh;
-    color: #4959A8;
+    color: #4959a8;
     padding-bottom: 2vw;
     font-weight: bold;
     position: relative;
@@ -192,7 +191,7 @@ input {
 }
 
 .index-middle-styled-letter {
-    color: #4959A8;
+    color: #4959a8;
     font-size: 10vh;
 }
 
@@ -216,7 +215,7 @@ input {
 
 #index-top {
     display: grid;
-    grid-template-areas: "index-top-burger-container index-top-logo-container" "index-top-web-developer index-top-web-developer";
+    grid-template-areas: 'index-top-burger-container index-top-logo-container' 'index-top-web-developer index-top-web-developer';
 }
 
 #index-top-logo-container {
@@ -284,7 +283,7 @@ input {
 #index-bottom-button {
     width: 30vw;
     height: 6vh;
-    background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
+    background: linear-gradient(-60deg, #4959a8 30%, #8494e3);
     border: none;
     margin-top: 5vh;
     font-size: 4vw;
@@ -338,7 +337,7 @@ Styles for 'contact.html'
 
 #contact-middle-name-label {
     font-size: 2.2vh;
-    color: #4959A8;
+    color: #4959a8;
     padding-bottom: 2vw;
     font-weight: bold;
     justify-self: start;
@@ -361,7 +360,7 @@ Styles for 'contact.html'
 
 .contact-middle-contact-label {
     font-size: 2.2vh;
-    color: #4959A8;
+    color: #4959a8;
     padding-bottom: 2vw;
     font-weight: bold;
     justify-self: start;
@@ -384,7 +383,7 @@ Styles for 'contact.html'
 }
 
 .contact-middle-container {
-    background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
+    background: linear-gradient(-60deg, #4959a8 30%, #8494e3);
     padding: 1.5vw;
     display: grid;
 }
@@ -429,7 +428,7 @@ Styles for 'contact.html'
 #contact-middle-submit-button {
     width: 30vw;
     height: 6vh;
-    background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
+    background: linear-gradient(-60deg, #4959a8 30%, #8494e3);
     border: none;
     font-size: 4vw;
     box-shadow: 1vw 1vw 0 0 #ebebeb;
@@ -481,7 +480,7 @@ Styles for 'about.html'
 .about-middle-paragraph {
     width: 75vw;
     line-height: 3vh;
-    letter-spacing: .1vw;
+    letter-spacing: 0.1vw;
     font-size: 1.8vh;
     font-weight: bold;
     margin-bottom: 5vh;
@@ -493,7 +492,7 @@ Styles for 'about.html'
 
 #about-middle-picture-container {
     display: grid;
-    background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
+    background: linear-gradient(-60deg, #4959a8 30%, #8494e3);
     padding: 1.5vw;
     margin-bottom: 5vh;
     width: fit-content;
@@ -534,7 +533,7 @@ Styles for 'skills.html'
 
 .skills-middle-container-label {
     font-size: 2.8vh;
-    color: #4959A8;
+    color: #4959a8;
     font-weight: bold;
     position: relative;
     right: 15vw;
@@ -562,8 +561,8 @@ Styles for 'skills.html'
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: .5fr 1fr;
-    grid-template-areas: "skills-middle-container-label skills-middle-container-skill";
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-areas: 'skills-middle-container-label skills-middle-container-skill';
     margin-bottom: 5vh;
 }
 
@@ -575,7 +574,7 @@ Styles for 'skills.html'
     height: 50vw;
     border-radius: 50%;
     grid-area: skills-middle-container-skill;
-    background: linear-gradient(-60deg, #4959A8 30%, #8494e3);
+    background: linear-gradient(-60deg, #4959a8 30%, #8494e3);
     padding: 1.5vw;
 }
 
@@ -623,8 +622,17 @@ Styles for 'skills.html'
 
 .skills-middle-container-background-skill-percentage {
     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
+    height: fit-content;
+    width: fit-content;
     color: white;
     z-index: 3;
-    font-size: 8vw;
+    font-size: 10vw;
+    font-weight: bold;
+    opacity: 0;
+    transition: 500ms;
 }
