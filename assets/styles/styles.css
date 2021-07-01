@@ -183,6 +183,7 @@ input {
 
 #index-middle {
     display: grid;
+    column-gap: 10px;
     justify-content: center;
     align-content: start;
     font-size: 7vh;
@@ -209,7 +210,7 @@ input {
 @keyframes index-middle-styled-letters {
     100% {
         opacity: 1;
-        right: 0;
+        right: 3vw;
     }
 }
 
@@ -327,7 +328,9 @@ Styles for 'contact.html'
 }
 
 #contact-body {
+    height: 100%;
     background: radial-gradient(#2f3338, #1f2226 80%);
+    width: 100%;
 }
 
 #contact-middle-form {
@@ -467,6 +470,7 @@ Styles for 'about.html'
 #about-body {
     height: 100%;
     background: radial-gradient(#2f3338, #1f2226 80%);
+    width: 100%;
 }
 
 #about-middle {
@@ -524,6 +528,7 @@ Styles for 'skills.html'
 #skills-body {
     height: 100%;
     background: radial-gradient(#2f3338, #1f2226 80%);
+    width: 100%;
 }
 
 #skills-middle {
@@ -635,4 +640,19 @@ Styles for 'skills.html'
     font-weight: bold;
     opacity: 0;
     transition: 500ms;
+}
+
+
+/*
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Styles for 'projects.html'
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+*/
+
+#projects-body {
+    height: 100%;
+    background: radial-gradient(#2f3338, #1f2226 80%);
+    width: 100%;
 }
