@@ -501,7 +501,6 @@ Styles for 'about.html'
     margin-bottom: 5vh;
     width: fit-content;
     justify-self: center;
-    box-shadow: 1.3vw 1.3vw 0 0 #ebebeb;
     opacity: 0;
     animation-name: about-middle-picture-container;
     animation-duration: 300ms;
@@ -661,9 +660,47 @@ Styles for 'projects.html'
     margin-top: 5vh;
 }
 
-.projects-middle-container {
-    margin: 0 auto 5vh auto;
+.projects-middle-background {
     width: 75vw;
     height: 22vh;
-    background-color: red;
+    margin: 0 auto 5vh auto;
+    box-shadow: 1vw 1vw 0 0 #ebebeb;
+    background: linear-gradient(-60deg, #4959a8 30%, #8494e3);
+    padding: 1.5vw;
+}
+
+.projects-middle-background-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.projects-middle-background-container-cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.projects-middle-background-container-textHolder {
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr 1fr;
+    z-index: 1;
+}
+
+.projects-middle-background-container-textHolder-name {
+    text-align: center;
+    font-size: 7vw;
+    font-weight: bold;
+}
+
+.projects-middle-background-container-textHolder-date {
+    text-align: center;
+    font-size: 4vw;
 }
