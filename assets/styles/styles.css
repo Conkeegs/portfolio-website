@@ -231,7 +231,7 @@ input {
     justify-self: start;
     padding: 8vw;
     grid-area: index-top-burger-container;
-    z-index: 3;
+    z-index: 5;
     position: relative;
     left: 0;
 }
@@ -655,4 +655,15 @@ Styles for 'projects.html'
     height: 100%;
     background: radial-gradient(#2f3338, #1f2226 80%);
     width: 100%;
+}
+
+#projects-middle {
+    margin-top: 5vh;
+}
+
+.projects-middle-container {
+    margin: 0 auto 5vh auto;
+    width: 75vw;
+    height: 22vh;
+    background-color: red;
 }
