@@ -53,7 +53,6 @@ function openDrawer() {
     cover.style.display = 'block';
     setTimeout(function() {
         cover.style.opacity = '.5';
-        cover.style.transition = '200ms';
     }, 0);
 
     sideDrawer.style.display = 'block';
@@ -72,14 +71,17 @@ function closeDrawer() {
 
     setTimeout(function() {
         cover.style.opacity = '0';
-        cover.style.transition = '200ms';
+        setTimeout(function() {
+            cover.style.display = 'none';
+        }, 200);
     }, 10);
-    cover.style.display = 'block';
 
     setTimeout(function() {
         sideDrawer.style.right = '80vw';
         sideDrawer.style.opacity = '0';
         sideDrawer.style.transition = '150ms';
+        setTimeout(function() {
+            sideDrawer.style.display = 'none';
+        }, 150);
     }, 250);
-    sideDrawer.style.display = 'block';
 }

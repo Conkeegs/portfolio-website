@@ -137,6 +137,7 @@ body {
     opacity: 0;
     position: absolute;
     z-index: 3;
+    transition: 200ms;
 }
 
 .middle-label {
