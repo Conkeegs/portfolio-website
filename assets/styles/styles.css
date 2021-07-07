@@ -136,7 +136,7 @@ body {
     display: none;
     opacity: 0;
     position: absolute;
-    z-index: 1;
+    z-index: 3;
 }
 
 .middle-label {
@@ -438,7 +438,7 @@ Styles for 'contact.html'
     transition: 300ms;
     opacity: 0;
     justify-self: center;
-    margin: 5vh;
+    margin-top: 5vh;
     animation-name: contact-middle-submit-button;
     animation-duration: 300ms;
     animation-timing-function: ease-out;
@@ -453,7 +453,7 @@ Styles for 'contact.html'
 }
 
 #contact-middle-submit-button:hover {
-    margin-top: 3vh;
+    margin-top: 4vh;
     margin-right: 1vw;
     box-shadow: 2vw 2vw 0 0 #ebebeb;
 }
@@ -660,16 +660,27 @@ Styles for 'projects.html'
     margin-top: 5vh;
 }
 
-.projects-middle-background {
+.projects-middle-shadow {
     width: 75vw;
     height: 22vh;
     margin: 0 auto 5vh auto;
-    box-shadow: 1vw 1vw 0 0 #ebebeb;
-    background: linear-gradient(-60deg, #4959a8 30%, #8494e3);
-    padding: 1.5vw;
+    position: relative;
+    background-color: #ebebeb;
 }
 
-.projects-middle-background-container {
+.projects-middle-shadow-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 1vw;
+    bottom: 1vw;
+    background: linear-gradient(-60deg, #4959a8 30%, #8494e3);
+    padding: 1.5vw;
+    box-sizing: border-box;
+    transition: 100ms;
+}
+
+.projects-middle-shadow-background-container {
     display: grid;
     justify-items: center;
     align-items: center;
@@ -678,7 +689,7 @@ Styles for 'projects.html'
     position: relative;
 }
 
-.projects-middle-background-container-cover {
+.projects-middle-shadow-background-container-cover {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -687,20 +698,20 @@ Styles for 'projects.html'
     z-index: 0;
 }
 
-.projects-middle-background-container-textHolder {
+.projects-middle-shadow-background-container-textHolder {
     display: grid;
     align-items: center;
     grid-template-rows: 1fr 1fr;
     z-index: 1;
 }
 
-.projects-middle-background-container-textHolder-name {
+.projects-middle-shadow-background-container-textHolder-name {
     text-align: center;
-    font-size: 7vw;
+    font-size: 6.5vw;
     font-weight: bold;
 }
 
-.projects-middle-background-container-textHolder-date {
+.projects-middle-shadow-background-container-textHolder-date {
     text-align: center;
-    font-size: 4vw;
+    font-size: 3.5vw;
 }
