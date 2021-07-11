@@ -129,6 +129,24 @@ body {
     right: 80vw;
 }
 
+#drawer-container {
+    margin: 14vh 0 0 12vw;
+    width: fit-content;
+}
+
+.drawer-container-link {
+    display: block;
+    color: #30302e;
+    font-size: 10vw;
+    margin-bottom: 1vh;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.drawer-container-link:active {
+    color: #4959a8;
+}
+
 #cover {
     height: 100%;
     width: 100%;
