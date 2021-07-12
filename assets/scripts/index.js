@@ -49,6 +49,7 @@ function rotateBurger() {
  */
 function openDrawer() {
     drawerOpened = true;
+    window.scrollTo(0, 0);
 
     cover.style.display = 'block';
     setTimeout(function() {
@@ -61,6 +62,8 @@ function openDrawer() {
         sideDrawer.style.opacity = '1';
         sideDrawer.style.transition = '215ms';
     }, 250);
+
+    document.addEventListener('scroll', disableScroll);
 }
 
 /**
@@ -84,4 +87,13 @@ function closeDrawer() {
             sideDrawer.style.display = 'none';
         }, 150);
     }, 250);
+
+    document.removeEventListener('scroll', disableScroll);
+}
+
+/**
+ * Disables scrolling when the drawer is open.
+ */
+function disableScroll() {
+    window.scrollTo(0, 0);
 }
