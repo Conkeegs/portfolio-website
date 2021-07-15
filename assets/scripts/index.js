@@ -97,3 +97,21 @@ function closeDrawer() {
 function disableScroll() {
     window.scrollTo(0, 0);
 }
+
+/*
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Scripts for 'index.html' bottom button.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+*/
+let button = document.getElementById('index-bottom-buttonShadow-button');
+
+button.addEventListener('click', function() {
+    button.style.right = '0';
+    button.style.bottom = '0';
+    setTimeout(function() {
+        button.style.right = '1vw';
+        button.style.bottom = '1vw';
+    }, 120);
+});
