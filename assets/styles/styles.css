@@ -34,6 +34,7 @@ body {
 #top {
     display: grid;
     grid-template-areas: 'top-burger-container top-logo-container' 'top-page-name top-page-name';
+    transition: 500ms;
 }
 
 #top-logo {
@@ -711,4 +712,8 @@ Styles for 'projects.html'
 .projects-middle-shadow-background-container-textHolder-date {
     text-align: center;
     font-size: 3.5vw;
+}
+
+.projects-middle-shadow-background-projectContainer {
+    display: none;
 }

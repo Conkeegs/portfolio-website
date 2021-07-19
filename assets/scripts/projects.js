@@ -17,6 +17,18 @@ for (let i = 0; i < projectContainers.length; i++) {
         setTimeout(function() {
             projectContainers[i].style.right = '1vw';
             projectContainers[i].style.bottom = '1vw';
+            openProject();
         }, 120);
     });
+}
+
+function openProject() {
+    setTimeout(toggleElementsDisplay, 100);
+}
+
+function toggleElementsDisplay() {
+    let top = document.getElementById('top');
+
+    top.style.opacity = '0';
+    setTimeout(() => (top.style.display = 'none'), 500);
 }
