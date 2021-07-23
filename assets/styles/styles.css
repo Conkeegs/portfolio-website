@@ -664,6 +664,7 @@ Styles for 'projects.html'
     margin: 0 auto 5vh auto;
     position: relative;
     background-color: #ebebeb;
+    transition: 500ms;
 }
 
 .projects-middle-shadow-background {
