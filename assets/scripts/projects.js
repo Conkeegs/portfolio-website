@@ -14,22 +14,12 @@ for (let i = 0; i < projectContainers.length; i++) {
     projectContainers[i].addEventListener('click', function() {
         projectContainers[i].style.right = '0';
         projectContainers[i].style.bottom = '0';
+        toggleElementsDisplay(projectContainers[i]);
         setTimeout(function() {
             projectContainers[i].style.right = '1vw';
             projectContainers[i].style.bottom = '1vw';
-            openProject(projectContainers[i]);
         }, 120);
     });
-}
-
-/**
- * This function simply takes in the project element the user clicked on and
- * passes it to the 'toggleElementsDisplay' function.
- *
- * @param {element} element The project that was clicked on.
- */
-function openProject(element) {
-    setTimeout(toggleElementsDisplay(element), 100);
 }
 
 /**
@@ -41,6 +31,7 @@ function openProject(element) {
  */
 function toggleElementsDisplay(element) {
     let top = document.getElementById('top');
+    element.parentNode.style.transition = '150ms';
 
     top.style.opacity = '0';
     for (let i = 0; i < projectContainers.length; i++) {
@@ -50,11 +41,15 @@ function toggleElementsDisplay(element) {
     }
 
     setTimeout(function() {
+        element.parentNode.style.left = '100vw';
+    }, 320);
+
+    setTimeout(function() {
         top.style.display = 'none';
         for (let i = 0; i < projectContainers.length; i++) {
             if (!projectContainers[i].isEqualNode(element)) {
                 projectContainers[i].parentNode.style.display = 'none';
             }
         }
-    }, 500);
+    }, 520);
 }
