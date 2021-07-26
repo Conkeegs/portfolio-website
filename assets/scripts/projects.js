@@ -27,29 +27,42 @@ for (let i = 0; i < projectContainers.length; i++) {
  * fade away. After 500ms, the elements that faded away's 'display' styles are set to
  * 'none'.
  *
- * @param {element} element The project that was clicked on.
+ * @param {element} clickedProject The project that was clicked on.
  */
-function toggleElementsDisplay(element) {
+function toggleElementsDisplay(clickedProject) {
     let top = document.getElementById('top');
-    element.parentNode.style.transition = '150ms';
+    clickedProject.parentNode.style.transition = '150ms';
 
     top.style.opacity = '0';
     for (let i = 0; i < projectContainers.length; i++) {
-        if (!projectContainers[i].isEqualNode(element)) {
+        if (!projectContainers[i].isEqualNode(clickedProject)) {
             projectContainers[i].parentNode.style.opacity = '0';
         }
     }
 
     setTimeout(function() {
-        element.parentNode.style.left = '100vw';
+        clickedProject.parentNode.style.left = '100vw';
     }, 320);
 
     setTimeout(function() {
-        top.style.display = 'none';
         for (let i = 0; i < projectContainers.length; i++) {
-            if (!projectContainers[i].isEqualNode(element)) {
+            if (!projectContainers[i].isEqualNode(clickedProject)) {
                 projectContainers[i].parentNode.style.display = 'none';
             }
         }
     }, 520);
+
+    setTimeout(function() {
+        changeText(clickedProject);
+    }, 600);
+}
+
+function changeText(clickedProject) {
+    let top = document.getElementById('top');
+    let topPageName = document.getElementById('top-page-name');
+
+    top.style.opacity = '1.0';
+    topPageName.innerHTML = clickedProject.getElementsByClassName(
+        'projects-middle-shadow-background-container-textHolder-name'
+    )[0].innerHTML;
 }

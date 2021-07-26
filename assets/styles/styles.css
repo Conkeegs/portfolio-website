@@ -98,6 +98,8 @@ body {
 }
 
 #top-page-name {
+    max-width: 90vw;
+    margin: 0 auto;
     font-size: 7vh;
     text-align: center;
     opacity: 0;
