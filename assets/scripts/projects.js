@@ -31,6 +31,7 @@ for (let i = 0; i < projectContainers.length; i++) {
  */
 function toggleElementsDisplay(clickedProject) {
     let top = document.getElementById('top');
+    let topLogoContainer = document.getElementById('top-logo-container');
     clickedProject.parentNode.style.transition = '150ms';
 
     top.style.opacity = '0';
@@ -50,19 +51,24 @@ function toggleElementsDisplay(clickedProject) {
                 projectContainers[i].parentNode.style.display = 'none';
             }
         }
+        clickedProject.parentNode.style.display = 'none';
+        topLogoContainer.style.display = 'none';
     }, 520);
 
     setTimeout(function() {
-        changeText(clickedProject);
+        switchToProjectPage(clickedProject);
     }, 600);
 }
 
-function changeText(clickedProject) {
+function switchToProjectPage(clickedProject) {
     let top = document.getElementById('top');
     let topPageName = document.getElementById('top-page-name');
+    let topBurger = document.getElementById('top-burger');
 
-    top.style.opacity = '1.0';
+    topBurger.src = 'assets/images/close.svg';
     topPageName.innerHTML = clickedProject.getElementsByClassName(
         'projects-middle-shadow-background-container-textHolder-name'
     )[0].innerHTML;
+
+    top.style.opacity = '1.0';
 }
