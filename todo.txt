@@ -1,1 +1,6 @@
 ~ desktop and phone scrolling for drawer
+
+1. clicking project sets opacity of other elements to 0
+2. clicked project moves to right
+3. other elements are un-displayed
+4. "project-page" element is displayed with dynamic information pulled from project's json object

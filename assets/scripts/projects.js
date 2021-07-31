@@ -31,28 +31,23 @@ for (let i = 0; i < projectContainers.length; i++) {
  */
 function toggleElementsDisplay(clickedProject) {
     let top = document.getElementById('top');
-    let topLogoContainer = document.getElementById('top-logo-container');
-    clickedProject.parentNode.style.transition = '150ms'; // change 'projects-middle-shadow' transition from 500ms to 150ms
+    let projectsMiddle = document.getElementById('projects-middle');
+    clickedProject.parentNode.style.transition = '150ms'; // change 'projects-middle-shadow' transition from 500ms to 150ms so that it animates to the right quicker
 
-    top.style.opacity = '0'; // top opacity is 0
+    top.style.opacity = '0'; // top opacity is set to 0
     for (let i = 0; i < projectContainers.length; i++) {
         if (!projectContainers[i].isEqualNode(clickedProject)) {
-            projectContainers[i].parentNode.style.opacity = '0'; // all other project opacities are 0
+            projectContainers[i].parentNode.style.opacity = '0'; // all other project opacities are set to 0
         }
     }
 
     setTimeout(function() {
-        clickedProject.parentNode.style.left = '100vw'; // clicked project is sent to the right
+        clickedProject.parentNode.style.left = '100vw'; // clicked project is animated to the right
     }, 320);
 
     setTimeout(function() {
-        for (let i = 0; i < projectContainers.length; i++) {
-            if (!projectContainers[i].isEqualNode(clickedProject)) {
-                projectContainers[i].parentNode.style.display = 'none'; // all other projects are removed
-            }
-        }
-        clickedProject.parentNode.style.display = 'none'; // clicked project is removed
-        topLogoContainer.style.display = 'none'; // logo is removed
+        projectsMiddle.style.display = 'none'; // projects-middle element is removed
+        top.style.display = 'none'; // top element is removed
     }, 520);
 
     setTimeout(function() {
