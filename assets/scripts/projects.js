@@ -32,6 +32,9 @@ for (let i = 0; i < projectContainers.length; i++) {
 function toggleElementsDisplay(clickedProject) {
     let top = document.getElementById('top');
     let projectsMiddle = document.getElementById('projects-middle');
+    let drawer = document.getElementById('drawer');
+    let cover = document.getElementById('cover');
+
     clickedProject.parentNode.style.transition = '150ms'; // change 'projects-middle-shadow' transition from 500ms to 150ms so that it animates to the right quicker
 
     top.style.opacity = '0'; // top opacity is set to 0
@@ -48,24 +51,17 @@ function toggleElementsDisplay(clickedProject) {
     setTimeout(function() {
         projectsMiddle.style.display = 'none'; // projects-middle element is removed
         top.style.display = 'none'; // top element is removed
+        drawer.style.display = 'none'; // drawer is removed
+        cover.style.display = 'none'; // cover is removed
     }, 520);
 
     setTimeout(function() {
-        switchToProjectPage(clickedProject);
+        switchToProjectPage();
     }, 600);
 }
 
-function switchToProjectPage(clickedProject) {
-    let top = document.getElementById('top');
-    let topPageName = document.getElementById('top-page-name');
-    let topBurger = document.getElementById('top-burger');
+function switchToProjectPage() {
+    let projectsPage = document.getElementById('projects-projectContainer');
 
-    topBurger.src = 'assets/images/close.svg';
-    topPageName.innerHTML = clickedProject.getElementsByClassName(
-        'projects-middle-shadow-background-container-textHolder-name'
-    )[0].innerHTML;
-
-    topBurger.onclick = () => (window.location = 'projects.html');
-
-    top.style.opacity = '1.0';
+    projectsPage.style.display = 'initial';
 }
