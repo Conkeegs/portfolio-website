@@ -728,7 +728,7 @@ Styles for 'projects.html'
 
 #projects-projectContainer-top {
     display: grid;
-    grid-template-areas: 'projects-projectContainer-top-container' 'projects-projectContainer-top-pageName projects-projectContainer-top-pageName';
+    grid-template-areas: 'projects-projectContainer-top-container projects-projectContainer-top-container' 'projects-projectContainer-top-pageName projects-projectContainer-top-pageName';
     transition: 500ms;
 }
 
