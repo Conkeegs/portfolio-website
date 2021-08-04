@@ -488,6 +488,7 @@ Styles for 'about.html'
     font-size: 1.8vh;
     font-weight: bold;
     margin-bottom: 5vh;
+    word-wrap: normal;
 }
 
 #about-middle-picture {
@@ -723,7 +724,11 @@ Styles for 'projects.html'
 }
 
 #projects-projectContainer-middle {
-    margin-top: 5vh;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh auto 0 auto;
 }
 
 #projects-projectContainer-top {
@@ -784,4 +789,36 @@ Styles for 'projects.html'
     100% {
         opacity: 1;
     }
+}
+
+.projects-projectContainer-middle-label {
+    font-size: 2.2vh;
+    color: #4959a8;
+    padding-bottom: 2vw;
+    font-weight: bold;
+    position: relative;
+    right: 15vw;
+    opacity: 0;
+    animation-name: projects-projectContainer-middle-label;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 800ms;
+}
+
+@keyframes projects-projectContainer-middle-label {
+    100% {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+.projects-projectContainer-middle-paragraph {
+    width: 75vw;
+    line-height: 3vh;
+    letter-spacing: 0.1vw;
+    font-size: 1.8vh;
+    font-weight: bold;
+    margin-bottom: 5vh;
+    word-wrap: normal;
 }
