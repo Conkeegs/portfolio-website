@@ -57,11 +57,14 @@ function toggleElementsDisplay(clickedProject) {
 
     setTimeout(function() {
         switchToProjectPage();
-    }, 600);
+    }, 520);
 }
 
 function switchToProjectPage() {
     let projectsPage = document.getElementById('projects-projectContainer');
+    let close = document.getElementById(
+        'projects-projectContainer-top-container-close'
+    );
 
     projectsPage.style.display = 'initial';
 }
