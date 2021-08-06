@@ -1,4 +1,3 @@
-~ fix white screen that comes with delay of switching to indiv project pages
 ~ desktop and phone scrolling for drawer
 
 1. clicking project sets opacity of other elements to 0

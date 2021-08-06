@@ -25,7 +25,7 @@ topBurger.addEventListener('click', function() {
  */
 function rotateBurger() {
     let topBurgerContainer = document.getElementById('top-burger-container');
-    topBurgerContainer.style.transition = '230ms';
+    // topBurgerContainer.style.transition = '230ms';
 
     if (drawerOpened) {
         setTimeout(function() {

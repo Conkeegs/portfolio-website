@@ -62,9 +62,27 @@ function toggleElementsDisplay(clickedProject) {
 
 function switchToProjectPage() {
     let projectsPage = document.getElementById('projects-projectContainer');
-    let close = document.getElementById(
-        'projects-projectContainer-top-container-close'
+    let closeContainer = document.getElementById(
+        'projects-projectContainer-top-closeContainer'
     );
 
     projectsPage.style.display = 'initial';
+
+    closeContainer.addEventListener('click', rotateClose);
+}
+
+/**
+ * This rotates the close icon 90 degrees and animates it to the left.
+ */
+function rotateClose() {
+    let closeContainer = document.getElementById(
+        'projects-projectContainer-top-closeContainer'
+    );
+
+    setTimeout(function() {
+        closeContainer.style.transform = 'rotate(-90deg)';
+        closeContainer.style.left = '-30vw';
+    }, 250);
+
+    // close.removeEventListener('click', rotateClose);
 }

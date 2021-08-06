@@ -737,7 +737,7 @@ Styles for 'projects.html'
     transition: 500ms;
 }
 
-#projects-projectContainer-top-container {
+#projects-projectContainer-top-closeContainer {
     max-height: 50px;
     max-width: 55px;
     justify-self: start;
@@ -746,6 +746,7 @@ Styles for 'projects.html'
     z-index: 5;
     position: relative;
     left: 0;
+    transition: 150ms;
 }
 
 #projects-projectContainer-top-container-close {
