@@ -729,6 +729,7 @@ Styles for 'projects.html'
     align-items: center;
     justify-content: center;
     margin: 5vh auto 0 auto;
+    transition: 500ms;
 }
 
 #projects-projectContainer-top {

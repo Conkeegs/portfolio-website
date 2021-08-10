@@ -14,7 +14,7 @@ for (let i = 0; i < projectContainers.length; i++) {
     projectContainers[i].addEventListener('click', function() {
         projectContainers[i].style.right = '0';
         projectContainers[i].style.bottom = '0';
-        toggleElementsDisplay(projectContainers[i]);
+        clearProjectList(projectContainers[i]);
         setTimeout(function() {
             projectContainers[i].style.right = '1vw';
             projectContainers[i].style.bottom = '1vw';
@@ -29,7 +29,7 @@ for (let i = 0; i < projectContainers.length; i++) {
  *
  * @param {element} clickedProject The project that was clicked on.
  */
-function toggleElementsDisplay(clickedProject) {
+function clearProjectList(clickedProject) {
     let top = document.getElementById('top');
     let projectsMiddle = document.getElementById('projects-middle');
     let drawer = document.getElementById('drawer');
@@ -56,11 +56,15 @@ function toggleElementsDisplay(clickedProject) {
     }, 520);
 
     setTimeout(function() {
-        switchToProjectPage();
+        showProjectPage(clickedProject);
     }, 520);
 }
 
-function switchToProjectPage() {
+/**
+ * This function displays the individial project page elements and also gives the 'close' button
+ * a listener for when it is clicked.
+ */
+function showProjectPage(clickedProject) {
     let projectsPage = document.getElementById('projects-projectContainer');
     let closeContainer = document.getElementById(
         'projects-projectContainer-top-closeContainer'
@@ -68,11 +72,14 @@ function switchToProjectPage() {
 
     projectsPage.style.display = 'initial';
 
-    closeContainer.addEventListener('click', rotateClose);
+    closeContainer.addEventListener('click', function() {
+        rotateClose();
+        clearProjectPage(clickedProject, projectsPage);
+    });
 }
 
 /**
- * This rotates the close icon 90 degrees and animates it to the left.
+ * This function rotates the close icon 90 degrees and animates it to the left.
  */
 function rotateClose() {
     let closeContainer = document.getElementById(
@@ -83,6 +90,16 @@ function rotateClose() {
         closeContainer.style.transform = 'rotate(-90deg)';
         closeContainer.style.left = '-30vw';
     }, 250);
+}
 
-    // close.removeEventListener('click', rotateClose);
+function clearProjectPage(clickedProject) {
+    let projectContainerTop = document.getElementById(
+        'projects-projectContainer-top'
+    );
+    let projectsContainerMiddle = document.getElementById(
+        'projects-projectContainer-middle'
+    );
+
+    projectContainerTop.style.opacity = '0.0';
+    projectsContainerMiddle.style.opacity = '0.0';
 }
