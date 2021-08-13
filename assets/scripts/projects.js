@@ -6,20 +6,27 @@ Scripts for 'projects.html' project links.
 
 */
 
-let projectContainers = document.getElementsByClassName(
-    'projects-middle-shadow-background'
-);
+function showProjectList(clickedProject) {
+    let top = document.getElementById('top');
+    let projectsMiddle = document.getElementById('projects-middle');
+    let drawer = document.getElementById('drawer');
+    let cover = document.getElementById('cover');
 
-for (let i = 0; i < projectContainers.length; i++) {
-    projectContainers[i].addEventListener('click', function() {
-        projectContainers[i].style.right = '0';
-        projectContainers[i].style.bottom = '0';
-        clearProjectList(projectContainers[i]);
-        setTimeout(function() {
-            projectContainers[i].style.right = '1vw';
-            projectContainers[i].style.bottom = '1vw';
-        }, 120);
-    });
+    projectsMiddle.style.display = 'initial';
+    top.style.display = 'grid';
+    drawer.style.display = 'initial';
+    cover.style.display = 'initial';
+
+    top.style.opacity = '1';
+    for (let i = 0; i < projectContainers.length; i++) {
+        if (!projectContainers[i].isEqualNode(clickedProject)) {
+            projectContainers[i].parentNode.style.opacity = '1';
+        }
+    }
+
+    setTimeout(function() {
+        clickedProject.parentNode.style.left = '0'; // clicked project is animated to the right
+    }, 320);
 }
 
 /**
@@ -53,9 +60,6 @@ function clearProjectList(clickedProject) {
         top.style.display = 'none'; // top element is removed
         drawer.style.display = 'none'; // drawer is removed
         cover.style.display = 'none'; // cover is removed
-    }, 520);
-
-    setTimeout(function() {
         showProjectPage(clickedProject);
     }, 520);
 }
@@ -78,8 +82,26 @@ function showProjectPage(clickedProject) {
     });
 }
 
+function clearProjectPage(clickedProject) {
+    let projectsContainer = document.getElementById('projects-projectContainer');
+    let projectsContainerTop = document.getElementById(
+        'projects-projectContainer-top'
+    );
+    let projectsContainerMiddle = document.getElementById(
+        'projects-projectContainer-middle'
+    );
+
+    projectsContainerTop.style.opacity = '0.0';
+    projectsContainerMiddle.style.opacity = '0.0';
+
+    setTimeout(function() {
+        projectsContainer.style.display = 'none';
+        showProjectList(clickedProject);
+    }, 520);
+}
+
 /**
- * This function rotates the close icon 90 degrees and animates it to the left.
+ * This function rotates the close icon 90 degrees and animates it to the left when clicked.
  */
 function rotateClose() {
     let closeContainer = document.getElementById(
@@ -92,14 +114,20 @@ function rotateClose() {
     }, 250);
 }
 
-function clearProjectPage(clickedProject) {
-    let projectContainerTop = document.getElementById(
-        'projects-projectContainer-top'
-    );
-    let projectsContainerMiddle = document.getElementById(
-        'projects-projectContainer-middle'
-    );
+/* All code down here sets up click listeners on each project so that they may load their own
+individual project pages.  */
+let projectContainers = document.getElementsByClassName(
+    'projects-middle-shadow-background'
+);
 
-    projectContainerTop.style.opacity = '0.0';
-    projectsContainerMiddle.style.opacity = '0.0';
+for (let i = 0; i < projectContainers.length; i++) {
+    projectContainers[i].addEventListener('click', function() {
+        projectContainers[i].style.right = '0';
+        projectContainers[i].style.bottom = '0';
+        clearProjectList(projectContainers[i]);
+        setTimeout(function() {
+            projectContainers[i].style.right = '1vw';
+            projectContainers[i].style.bottom = '1vw';
+        }, 120);
+    });
 }
