@@ -9,13 +9,9 @@ Scripts for 'projects.html' project links.
 function showProjectList(clickedProject) {
     let top = document.getElementById('top');
     let projectsMiddle = document.getElementById('projects-middle');
-    let drawer = document.getElementById('drawer');
-    let cover = document.getElementById('cover');
 
-    projectsMiddle.style.display = 'initial';
+    projectsMiddle.style.display = 'block';
     top.style.display = 'grid';
-    drawer.style.display = 'initial';
-    cover.style.display = 'initial';
 
     top.style.opacity = '1';
     for (let i = 0; i < projectContainers.length; i++) {
@@ -39,8 +35,6 @@ function showProjectList(clickedProject) {
 function clearProjectList(clickedProject) {
     let top = document.getElementById('top');
     let projectsMiddle = document.getElementById('projects-middle');
-    let drawer = document.getElementById('drawer');
-    let cover = document.getElementById('cover');
 
     clickedProject.parentNode.style.transition = '150ms'; // change 'projects-middle-shadow' transition from 500ms to 150ms so that it animates to the right quicker
 
@@ -58,8 +52,6 @@ function clearProjectList(clickedProject) {
     setTimeout(function() {
         projectsMiddle.style.display = 'none'; // projects-middle element is removed
         top.style.display = 'none'; // top element is removed
-        drawer.style.display = 'none'; // drawer is removed
-        cover.style.display = 'none'; // cover is removed
         showProjectPage(clickedProject);
     }, 520);
 }
