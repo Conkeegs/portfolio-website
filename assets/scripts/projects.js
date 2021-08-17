@@ -62,11 +62,21 @@ function clearProjectList(clickedProject) {
  */
 function showProjectPage(clickedProject) {
     let projectsPage = document.getElementById('projects-projectContainer');
+    let projectsContainerTop = document.getElementById(
+        'projects-projectContainer-top'
+    );
+    let projectsContainerMiddle = document.getElementById(
+        'projects-projectContainer-middle'
+    );
     let closeContainer = document.getElementById(
         'projects-projectContainer-top-closeContainer'
     );
 
     projectsPage.style.display = 'initial';
+    projectsContainerTop.style.opacity = '1';
+    projectsContainerMiddle.style.opacity = '1';
+    closeContainer.style.transform = 'rotate(0)';
+    closeContainer.style.left = '0';
 
     closeContainer.addEventListener('click', function() {
         rotateClose();
