@@ -6,6 +6,12 @@ Scripts for 'projects.html' project links.
 
 */
 
+/**
+ * This function shows the original project listing page after the user exits out of an individual project page.
+ *
+ * @param {element} clickedProject The project that is to be animated back to the left (i.e. the poject that
+ * was clicked on originally and animated to the right.)
+ */
 function showProjectList(clickedProject) {
     let top = document.getElementById('top');
     let projectsMiddle = document.getElementById('projects-middle');
@@ -21,37 +27,35 @@ function showProjectList(clickedProject) {
     }
 
     setTimeout(function() {
-        clickedProject.parentNode.style.left = '0'; // clicked project is animated to the right
+        clickedProject.parentNode.style.left = '0';
     }, 320);
 }
 
 /**
- * This function makes all of the elements, except the 'project' element the user clicked on,
- * fade away. After 500ms, the elements that faded away's 'display' styles are set to
- * 'none'.
+ * This function makes all of the elements on the project listing page, except the 'project' element the user clicked on,
+ * fade away. After 500ms, the elements that faded away have their 'display' style set to
+ * 'none'. It then calls the 'showProjectPage' function.
  *
- * @param {element} clickedProject The project that was clicked on.
+ * @param {element} clickedProject The project that was clicked on (i.e. the project that animates to the right).
  */
 function clearProjectList(clickedProject) {
     let top = document.getElementById('top');
     let projectsMiddle = document.getElementById('projects-middle');
 
-    clickedProject.parentNode.style.transition = '150ms'; // change 'projects-middle-shadow' transition from 500ms to 150ms so that it animates to the right quicker
-
-    top.style.opacity = '0'; // top opacity is set to 0
+    top.style.opacity = '0';
     for (let i = 0; i < projectContainers.length; i++) {
         if (!projectContainers[i].isEqualNode(clickedProject)) {
-            projectContainers[i].parentNode.style.opacity = '0'; // all other project opacities are set to 0
+            projectContainers[i].parentNode.style.opacity = '0';
         }
     }
 
     setTimeout(function() {
-        clickedProject.parentNode.style.left = '100vw'; // clicked project is animated to the right
+        clickedProject.parentNode.style.left = '100vw';
     }, 320);
 
     setTimeout(function() {
-        projectsMiddle.style.display = 'none'; // projects-middle element is removed
-        top.style.display = 'none'; // top element is removed
+        projectsMiddle.style.display = 'none';
+        top.style.display = 'none';
         showProjectPage(clickedProject);
     }, 520);
 }
@@ -59,6 +63,9 @@ function clearProjectList(clickedProject) {
 /**
  * This function displays the individial project page elements and also gives the 'close' button
  * a listener for when it is clicked.
+ *
+ * @param {element} clickedProject The project that was clicked on. It is used here simply to pass it to the 'clearProjectPage'
+ * function when the user closes out of this page.
  */
 function showProjectPage(clickedProject) {
     let projectsPage = document.getElementById('projects-projectContainer');
@@ -80,10 +87,17 @@ function showProjectPage(clickedProject) {
 
     closeContainer.addEventListener('click', function() {
         rotateClose();
-        clearProjectPage(clickedProject, projectsPage);
+        clearProjectPage(clickedProject);
     });
 }
 
+/**
+ * This function clears individual project pages. It displays the individual project page as 'none', and then calls the 'showProjectsList'
+ * function.
+ *
+ * @param {element} clickedProject The project that was clicked on. It is used here to tell the 'showProjectList' function which
+ * project element to animate.
+ */
 function clearProjectPage(clickedProject) {
     let projectsContainer = document.getElementById('projects-projectContainer');
     let projectsContainerTop = document.getElementById(
@@ -103,7 +117,7 @@ function clearProjectPage(clickedProject) {
 }
 
 /**
- * This function rotates the close icon 90 degrees and animates it to the left when clicked.
+ * This function rotates the 'close' icon on individual project pages 90 degrees and then animates it to the left, when clicked.
  */
 function rotateClose() {
     let closeContainer = document.getElementById(

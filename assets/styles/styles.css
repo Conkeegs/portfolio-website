@@ -667,7 +667,7 @@ Styles for 'projects.html'
     margin: 0 auto 5vh auto;
     position: relative;
     background-color: #ebebeb;
-    transition: 500ms;
+    transition: 150ms;
     left: 0;
 }
 
