@@ -10,16 +10,6 @@ let sideDrawer = document.getElementById('drawer');
 let cover = document.getElementById('cover');
 let drawerOpened = false;
 
-topBurger.addEventListener('click', function() {
-    if (drawerOpened) {
-        closeDrawer();
-    } else {
-        openDrawer();
-    }
-
-    rotateBurger();
-});
-
 /**
  * This rotates the burger icon 90 degrees depending on if the drawer is opened or closed.
  */
@@ -95,3 +85,19 @@ function closeDrawer() {
 function disableScroll() {
     window.scrollTo(0, 0);
 }
+
+// All code below here in this section utilizes the code above to allow the drawer to operate properly.
+cover.addEventListener('click', function() {
+    closeDrawer();
+    rotateBurger();
+});
+
+topBurger.addEventListener('click', function() {
+    if (drawerOpened) {
+        closeDrawer();
+    } else {
+        openDrawer();
+    }
+
+    rotateBurger();
+});

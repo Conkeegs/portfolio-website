@@ -1,4 +1,6 @@
-~ when buttons are clicked, make sure all other clicking mechanics are disables
+~ json tips
+~ resume how to
+~ when buttons are clicked, make sure all other clicking mechanics are disabled
 ~ desktop and phone scrolling for drawer
 
 1. clicking project sets opacity of other elements to 0
