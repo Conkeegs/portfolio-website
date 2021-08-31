@@ -100,12 +100,12 @@ body {
 #top-page-name {
     max-width: 90vw;
     margin: 0 auto;
-    font-size: 7vh;
+    font-size: 8vh;
     text-align: center;
     opacity: 0;
     color: #e6eaff;
     padding-top: 4vh;
-    font-weight: bold;
+    font-family: 'Fredoka One', cursive;
     grid-area: top-page-name;
     animation-name: top-page-name;
     animation-duration: 300ms;
@@ -143,6 +143,7 @@ body {
     font-size: 10vw;
     margin-bottom: 1vh;
     text-decoration: none;
+    font-family: 'Fredoka One', cursive;
     font-weight: bold;
 }
 
@@ -162,13 +163,14 @@ body {
 }
 
 .middle-label {
-    font-size: 2.2vh;
+    font-size: 3.5vh;
     color: #4959a8;
     padding-bottom: 2vw;
     font-weight: bold;
     position: relative;
     right: 15vw;
     opacity: 0;
+    font-family: 'Fredoka One', cursive;
     animation-name: middle-label;
     animation-duration: 300ms;
     animation-timing-function: ease-out;
@@ -369,7 +371,7 @@ Styles for 'contact.html'
 }
 
 #contact-middle-name-label {
-    font-size: 2.2vh;
+    font-size: 3.5vh;
     color: #4959a8;
     padding-bottom: 2vw;
     font-weight: bold;
@@ -377,6 +379,7 @@ Styles for 'contact.html'
     position: relative;
     right: 15vw;
     opacity: 0;
+    font-family: 'Fredoka One', cursive;
     animation-name: contact-middle-name-label;
     animation-duration: 300ms;
     animation-timing-function: ease-out;
@@ -392,7 +395,7 @@ Styles for 'contact.html'
 }
 
 .contact-middle-contact-label {
-    font-size: 2.2vh;
+    font-size: 3.5vh;
     color: #4959a8;
     padding-bottom: 2vw;
     font-weight: bold;
@@ -401,6 +404,7 @@ Styles for 'contact.html'
     position: relative;
     right: 15vw;
     opacity: 0;
+    font-family: 'Fredoka One', cursive;
     animation-name: contact-middle-contact-label;
     animation-duration: 300ms;
     animation-timing-function: ease-out;
@@ -537,7 +541,7 @@ Styles for 'skills.html'
 }
 
 .skills-middle-container-label {
-    font-size: 2.8vh;
+    font-size: 3.5vh;
     color: #4959a8;
     font-weight: bold;
     position: relative;
@@ -547,6 +551,7 @@ Styles for 'skills.html'
     display: block;
     align-self: center;
     text-align: center;
+    font-family: 'Fredoka One', cursive;
     grid-area: skills-middle-container-label;
     animation-name: skills-middle-container-label;
     animation-duration: 300ms;
@@ -566,7 +571,7 @@ Styles for 'skills.html'
     display: grid;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: minmax(0, 0.5fr) 1fr;
     grid-template-areas: 'skills-middle-container-label skills-middle-container-skill';
     margin-bottom: 5vh;
 }
@@ -711,7 +716,8 @@ Styles for 'projects.html'
 .projects-middle-shadow-background-container-textHolder-name {
     text-align: center;
     font-size: 6.5vw;
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-family: 'Fredoka One', cursive;
 }
 
 .projects-middle-shadow-background-container-textHolder-date {
@@ -773,12 +779,12 @@ Styles for 'projects.html'
 #projects-projectContainer-top-pageName {
     max-width: 90vw;
     margin: 0 auto;
-    font-size: 7vh;
+    font-size: 8vh;
     text-align: center;
     opacity: 0;
     color: #e6eaff;
     padding-top: 4vh;
-    font-weight: bold;
+    font-family: 'Fredoka One', cursive;
     grid-area: projects-projectContainer-top-pageName;
     animation-name: projects-projectContainer-top-pageName;
     animation-duration: 300ms;
@@ -794,13 +800,14 @@ Styles for 'projects.html'
 }
 
 .projects-projectContainer-middle-label {
-    font-size: 2.2vh;
+    font-size: 3.5vh;
     color: #4959a8;
     padding-bottom: 2vw;
     font-weight: bold;
     position: relative;
     right: 15vw;
     opacity: 0;
+    font-family: 'Fredoka One', cursive;
     animation-name: projects-projectContainer-middle-label;
     animation-duration: 300ms;
     animation-timing-function: ease-out;
