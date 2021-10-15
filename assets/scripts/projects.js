@@ -130,8 +130,10 @@ function rotateClose() {
     }, 250);
 }
 
-/* All code down here sets up click listeners on each project so that they may load their own
-individual project pages.  */
+/*
+Main Code
+*/
+
 let projectContainers = document.getElementsByClassName(
     'projects-middle-shadow-background'
 );

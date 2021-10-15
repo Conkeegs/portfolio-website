@@ -642,8 +642,8 @@ Styles for 'skills.html'
     color: white;
     z-index: 3;
     font-size: 10vw;
-    font-weight: bold;
     opacity: 0;
+    font-family: 'Fredoka One', cursive;
     transition: 500ms;
 }
 

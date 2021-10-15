@@ -86,7 +86,10 @@ function disableScroll() {
     window.scrollTo(0, 0);
 }
 
-// All code below here in this section utilizes the code above to allow the drawer to operate properly.
+/*
+Main Code
+*/
+
 cover.addEventListener('click', function() {
     closeDrawer();
     rotateBurger();

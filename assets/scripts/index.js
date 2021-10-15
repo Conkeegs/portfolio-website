@@ -88,7 +88,13 @@ function disableScroll() {
     window.scrollTo(0, 0);
 }
 
-// All code below here in this section utilizes the code above to allow the drawer to operate properly.
+/*
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Main Code
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+*/
 cover.addEventListener('click', function() {
     closeDrawer();
     rotateBurger();
@@ -112,6 +118,10 @@ Scripts for 'index.html' bottom button.
 
 */
 let button = document.getElementsByClassName('buttonShadow-button')[0];
+
+/*
+Main Code
+*/
 
 button.addEventListener('click', function() {
     button.style.right = '0';

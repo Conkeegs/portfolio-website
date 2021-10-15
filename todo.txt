@@ -1,4 +1,5 @@
 ~ json tips
+~ projects slide to right should happen before others things unload (visible movement downwards on firefox)
 ~ resume how to
 ~ when buttons are clicked, make sure all other clicking mechanics are disabled
 ~ desktop and phone scrolling for drawer
